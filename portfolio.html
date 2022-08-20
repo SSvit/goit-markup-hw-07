@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Шапка-->
+    <header class="header">
+      <div class="container container-flex">
+        <nav class="nav-section">
+          <a lang="en" href="./index.html" class="logo"
+            >Web<span class="logo-black">Studio</span></a
+          >
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link current list-current">Портфоліо</a>
+            </li>
+            <li class="item">
+              <a href="" class="link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="auth-nav list">
+          <li class="item-nav">
+            <a href="mailto:info@devstudio.com" class="link link-search search">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/symbol-header.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item-nav">
+            <a href="tel:+380961111111" class="link link-search">
+              <svg class="tiny" width="10" height="16">
+                <use href="./images/symbol-header.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--Унікальний контент-->
+    <main>
+      <section class="section-portfolio page-section">
+        <div class="container">
+          <h1 class="hero-titel visually-hidden">Наші роботи</h1>
+          <ul class="button list">
+            <li class="button-item items">
+              <button type="button" class="btn-primary link">Все</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="btn-secondary link">Веб-сайти</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="btn-secondary link">Додатки</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="btn-secondary link">Дизайн</button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="btn-secondary link">Маркетинг</button>
+            </li>
+          </ul>
+          <!--Другий список з зображеннями-->
+          <ul class="about-works list">
+            <li class="section-image-item section-product li-thumb">
+              <a href="" class="link-hover link-box link">
+                <div class="product-thumb">
+                  <!-- <div class="product-box"> -->
+                  <img
+                    class="img"
+                    src="./images/homework-img-1.jpg"
+                    alt="Робота наших працівників"
+                  />
+                  <p class="product-text link">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                  <!-- </div> -->
+                </div>
+                <div class="portfolio-team-box">
+                  <h3 class="item">Технокряк</h3>
+                  <p class="texts">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-image-item li-thumb">
+              <a href="" class="link-hover link-box">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-2.jpg" alt="Постер Новий Орлеан" />
+                  <div class="product-box">
+                    <p class="product-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team-box">
+                  <h3 class="item">Постер <span lang="en"> New Orlean vs Golden Star</span></h3>
+                  <p class="texts">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-image-item li-thumb">
+              <a href="" class="link-hover link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-3.jpg" alt="Ресторан" />
+                  <div class="product-box">
+                    <p class="product-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team-box">
+                  <h3 class="item">Ресторан <span lang="en">Seafood</span></h3>
+                  <p class="texts">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-image-item li-thumb">
+              <a href="" class="link-hover link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-4.jpg" alt="Основний проект" />
+                  <div class="product-box">
+                    <p class="product-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team-box">
+                  <h3 class="item">Проект <span lang="en">Prime</span></h3>
+                  <p class="texts">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-image-item li-thumb">
+              <a href="" class="link-hover link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-5.jpg" alt="Коробки" />
+                  <div class="product-box">
+                    <p class="product-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team-box">
+                  <h3 class="item">Проект <span lang="en">Boxes</span></h3>
+                  <p class="texts">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-image-item li-thumb">
+              <a href="" class="link-hover link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-6.jpg" alt="Натхнення без кордонів" />
+                  <div class="product-box">
+                    <p class="product-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team-box">
+                  <h3 lang="en" class="item">Inspiration has no Borders</h3>
+                  <p class="texts">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-image-item li-thumb">
+              <a href="" class="link-hover link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-7.jpg" alt="Видання" />
+                  <div class="product-box">
+                    <p class="product-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team-box">
+                  <h3 class="item">Видавництво <span lang="en">Limited Edition</span></h3>
+                  <p class="texts">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-image-item li-thumb">
+              <a href="" class="link-hover link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-8.jpg" alt="Значок проекту" />
+                  <div class="product-box">
+                    <p class="product-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team-box">
+                  <h3 class="item">Проект <span lang="en">LAB</span></h3>
+                  <p class="texts">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-image-item li-thumb">
+              <a href="" class="link-hover link-box link">
+                <div class="product-thumb">
+                  <img class="img" src="./images/homework-img-9.jpg" alt="Зростаючий бізнес" />
+                  <div class="product-box">
+                    <p class="product-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-team-box">
+                  <h3 lang="en" class="item">Growing Business</h3>
+                  <p class="texts">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Футер-->
+    <footer class="footer footer-icon">
+      <div class="container container-icon">
+        <div class="footer-flex">
+          <a lang="en" href="./index.html" class="footer-logo"
+            >Web<span class="logo-white">Studio</span></a
+          >
+          <address class="footer-address">
+            <ul class="footer-nav list-item">
+              <li class="title link">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="title">
+                <a href="mailto:info@example.com" class="link-nav link">info@example.com</a>
+              </li>
+              <li class="title">
+                <a href="tel:+380991111111" class="link-nav link">+3809911111111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-flex">
+          <p class="footer-soc">приєднуйтесь</p>
+          <ul class="footer-soc-list">
+            <li class="footer-soc-item link">
+              <a href="" class="footer-hover link">
+                <svg class="soc-item" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram-2-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item link">
+              <a href="" class="footer-hover link">
+                <svg class="soc-item" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item link">
+              <a href="" class="footer-hover link">
+                <svg class="soc-item" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item link">
+              <a href="" class="footer-hover link">
+                <svg class="soc-item" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- РОЗСИЛКА -->
+        <div class="online">
+          <p class="footer-soc">Підпишіться на розсилку</p>
+          <form class="online-form">
+            <input type="email" class="online-input link" name="newsletter" placeholder="E-mail" />
+            <button type="submit" class="btn-input-online link">Підписатися</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
