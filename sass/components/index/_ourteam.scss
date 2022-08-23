@@ -1,6 +1,22 @@
      /*--------------------- Секція 4 -----------------------*/
      .section-works__pictures {
          margin: -15px;
+        .title {
+                margin-bottom: 10px;
+                color: var(--primary-text-color);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.18;
+                text-align: center;
+                letter-spacing: 0.03em;
+            }
+                        .text {
+                            color: var(--title-text-color);
+                            line-height: 1.18;
+                            text-align: center;
+                            letter-spacing: 0.03em;
+                            margin-bottom: 16px;
+                        }
      }
 
      .section-works__image {
@@ -9,26 +25,6 @@
          background-color: var(--primary-white-color);
          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
          border-radius: 0px 0px 4px 4px;
-     }
-
-     /* Стилiзацiя заголовку h3 */
-     .section-works__pictures .title {
-         margin-bottom: 10px;
-         color: var(--primary-text-color);
-         font-weight: 500;
-         font-size: 16px;
-         line-height: 1.18;
-         text-align: center;
-         letter-spacing: 0.03em;
-     }
-
-     /* Стилiзацiя тексту p */
-     .section-works__pictures .text {
-         color: var(--title-text-color);
-         line-height: 1.18;
-         text-align: center;
-         letter-spacing: 0.03em;
-         margin-bottom: 16px;
      }
 
      .team-box {
@@ -63,31 +59,13 @@
 
          transition-property: fill;
          transition-property: background-color;
+        &:hover,
+        &:focus {
+                fill: var(--primary-white-color);
+                background-color: var(--accent-hover-color);
+            }
      }
-
-     /* .team-box__userpic-icon {
-    fill: #AFB1B8;
-} */
-
-     /* .team-box__userpic-icon {
-    transition-property: fill;
-} */
-     /* .team-box__userpic-item {
-    transition: background-color 250ms linear;
-} */
-
-     /* .team-box__userpic-item,
-.team-box__userpic-link {
-    transition: background-color 250ms linear;
-} */
-
-     .team-box__userpic-link:hover,
-     .team-box__userpic-link:focus {
-         fill: var(--primary-white-color);
-         background-color: var(--accent-hover-color);
-     }
-
-     /* Фон для  секціi 4 */
+/* Фон для  секціi 4 */
      .section-works {
          background: var(--background-darker-than-white);
      }

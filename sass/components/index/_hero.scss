@@ -3,10 +3,9 @@
      .section-hero {
          padding: 200px 0;
          text-align: center;
-     }
-
-     .section-hero .container {
-         width: 696px;
+        .container {
+                width: 696px;
+            }
      }
 
      .section-hero__title {
@@ -43,12 +42,11 @@
          border: 0;
 
          transition-property: color, background-color;
-     }
-
-     .section-hero__btn:hover,
-     .section-hero__btn:focus {
-         color: var(--primary-white-color);
-         background-color: var(--accent-hover-color);
+        &:hover,
+         &:focus {
+                color: var(--primary-white-color);
+                background-color: var(--accent-hover-color);
+            }
      }
 
      .page-section {

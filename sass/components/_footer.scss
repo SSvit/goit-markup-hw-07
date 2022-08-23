@@ -1,6 +1,6 @@
      /*--------------------- Футер -----------------------*/
      .footer {
-         background: var(--background-very-gray);
+         background-color: var(--background-very-gray);
          margin: 0 auto;
      }
 
@@ -36,22 +36,22 @@
          text-decoration: none;
 
          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     }
+    &:hover,
+     &:focus {
+            color: var(--accent-hover-color);
+        }
+    }
 
      .footer-logo__logo-white {
          color: var(--primary-white-color);
 
          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: var(--accent-hover-color);
+        }
      }
-
-     .footer-logo:hover,
-     .footer-logo:focus,
-     .footer-logo__logo-white:hover,
-     .footer-logo__logo-white:focus {
-         color: var(--accent-hover-color);
-     }
-
-     /* Стилiзує нaвiгацiю */
+/* Стилiзує нaвiгацiю */
      .footer-address__nav {
          margin: 0;
          padding-left: 0;
@@ -61,17 +61,20 @@
          line-height: 1.71;
          letter-spacing: 0.03em;
          text-decoration: none;
-     }
-
-     .footer-address__nav li {
-         margin-bottom: 9px;
-     }
+        li {
+                margin-bottom: 9px;
+            }        
+    }
 
      .footer-address__link {
          color: rgba(255, 255, 255, 0.6);
          text-decoration: none;
 
          transition-property: color;
+        &:hover,
+        &:focus {
+                color: var(--accent-color);
+            }
      }
 
      .footer-address__title:last-child {
@@ -79,9 +82,7 @@
      }
 
      .footer-address__nav .footer-address__title:hover,
-     .footer-address__nav .footer-address__title:focus,
-     .footer-address__nav .footer-address__link:hover,
-     .footer-address__nav .footer-address__link:focus {
+     .footer-address__nav .footer-address__title:focus {
          color: var(--accent-color);
      }
 
@@ -126,6 +127,9 @@
          display: flex;
          align-items: center;
          justify-content: center;
+            &:hover {
+                    background-color: var(--accent-hover-color);
+                }
      }
 
      .footer-flex__soc {
@@ -145,14 +149,11 @@
          border-radius: 50%;
 
          transition-property: background-color;
+       &:focus {
+                background-color: var(--accent-hover-color);
+            }
      }
-
-     .footer-flex__item:hover,
-     .footer-flex__hover:focus {
-         background-color: var(--accent-hover-color);
-     }
-
-     /*----- Футер Розсилка -----*/
+/*----- Футер Розсилка -----*/
      .footer-online__form {
          display: flex;
          justify-content: center;
@@ -177,14 +178,13 @@
          outline: transparent;
 
          transition-property: border-color;
+        &:hover,
+          &:focus {
+                border-color: var(--accent-hover-color);
+            }
      }
 
-     .footer-online__input:hover,
-     .footer-online__input:focus {
-         border-color: var(--accent-hover-color);
-     }
-
-     .footer-online__btn {
+    .footer-online__btn {
          display: flex;
          width: 200px;
          height: 50px;
@@ -206,25 +206,19 @@
          border: 0;
 
          transition-property: background-color, box-shadow;
-     }
-
-     .footer-online__btn:hover,
-     .footer-online__btn:focus {
-         background-color: var(--accent-hover-color);
-         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-     }
-
-     .footer-online__btn::after {
-         content: "";
-         width: 24px;
-         height: 24px;
-         margin-left: 10px;
-
-         color: var(--primary-white-color);
-         background-image: url(../images/icon-plane.svg);
-     }
-
-     /* Фон для футера */
-     .footer {
-         background: var(--background-very-gray);
-     }
+        &:hover,
+       &:focus {
+                background-color: var(--accent-hover-color);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            }
+         &::after {
+              content: "";
+              width: 24px;
+              height: 24px;
+              margin-left: 10px;
+    
+              color: var(--primary-white-color);
+              background-image: url(../images/icon-plane.svg);
+          }
+    
+    }

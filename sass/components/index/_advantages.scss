@@ -1,50 +1,48 @@
 /*------------------------ Секція 2 --------------------*/
-/* Стилiзацiя заголовку h3 */
-.section__list .title {
-    /* margin-top: 30px; */
-    margin-bottom: 10px;
-    color: var(--primary-text-color);
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-/* Стилiзацiя тексту p */
-.section__list .text {
-    color: var(--title-text-color);
-
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-}
-
 .section__list {
     list-style: none;
     display: flex;
     gap: 30px;
     align-items: center;
+
+    .text {
+        color: var(--title-text-color);
+
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
+
+    .title {
+        /* margin-top: 30px; */
+        margin-bottom: 10px;
+        color: var(--primary-text-color);
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
 }
 
 .section__item {
     flex-basis: calc((100% - 3 * 30px) / 4);
-}
 
-.section__item::before {
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    /* display: flex; */
-    background-color: var(--background-darker-than-white);
-    /* justify-content: center;
+    &::before {
+        display: block;
+        content: "";
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        /* display: flex; */
+        background-color: var(--background-darker-than-white);
+        /* justify-content: center;
     align-items: center; */
-    background-size: 70px 65px;
-    background-repeat: no-repeat;
-    background-position: center;
+        background-size: 70px 65px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .icon-antenna::before {
@@ -62,7 +60,3 @@
 .icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
 }
-
-/* .feature-list-item:focus::before {
-    fill: var(--accent-hover-color);
-} */
