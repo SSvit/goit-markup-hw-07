@@ -119,7 +119,6 @@ img {
   color: var(--accent-hover-color);
 }
 
-/* Логотип -Studio- */
 .logo__black {
   color: var(--accent-black-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,7 +127,6 @@ img {
   color: var(--accent-hover-color);
 }
 
-/* Хедер Site nav */
 .navigation__list {
   display: flex;
   /* margin-left: 50px; */
@@ -185,14 +183,10 @@ img {
   border-radius: 2px;
 }
 
-.list-current .connect__item {
+.connect__item {
   display: flex;
 }
 
-/* .connect .connect__item {   */
-/* padding-top: 32px; */
-/* padding-bottom: 32px; */
-/* } */
 .connect {
   display: flex;
   justify-content: center;
@@ -312,8 +306,8 @@ img {
 }
 
 .section-hero__title {
-  /* margin-top: 106px; */
   margin-bottom: 30px;
+  /* margin-top: 106px; */
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -333,11 +327,11 @@ img {
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  font-family: Roboto;
   cursor: pointer;
   border-radius: 4px;
   border: 0;
@@ -378,8 +372,8 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .section__list2 {
@@ -408,12 +402,12 @@ img {
   align-items: center;
   height: 70px;
   color: #FFFFFF;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
-  text-align: center;
+  line-height: 1.14;
   letter-spacing: 0.03em;
+  font-style: normal;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -431,14 +425,14 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .section-works__pictures .text {
   color: var(--title-text-color);
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -593,11 +587,12 @@ img {
 .modal-title {
   margin-bottom: 12px;
   color: #212121;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  letter-spacing: 0.03em;
+  font-family: "Roboto";
+  font-style: normal;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -618,16 +613,14 @@ img {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
 }
 
 .modal-wrap__input:hover,
 .modal-wrap__input:focus {
   border-color: var(--accent-hover-color);
-}
-
-.modal-wrap__input:hover + .modal-wrap__icon,
-.modal-wrap__input:focus + .modal-wrap__icon {
-  fill: var(--accent-hover-color);
 }
 
 .modal-wrap {
@@ -641,6 +634,9 @@ img {
   transform: translateY(-40%);
   transition-property: fill;
 }
+.modal-wrap__input:hover + .modal-wrap__icon, .modal-wrap__input:focus + .modal-wrap__icon {
+  fill: var(--accent-hover-color);
+}
 
 .modal__btn-input {
   display: flex;
@@ -649,11 +645,12 @@ img {
   margin: auto;
   /* left: 700px;
   top: 712px; */
+  color: #FFFFFF;
+  background: #2196F3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: #FFFFFF;
-  background: #2196F3;
+  letter-spacing: 0.03em;
   justify-content: center;
   align-items: center;
   letter-spacing: 0.06em;
@@ -670,10 +667,10 @@ img {
 
 .modal-form__label {
   display: block;
-  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  margin-bottom: 4px;
   color: #757575;
 }
 
@@ -701,7 +698,6 @@ img {
   border-color: var(--accent-hover-color);
 }
 
-/* ---за Репетою--- */
 .modal-checkbox {
   display: flex;
   justify-content: center;
@@ -722,25 +718,23 @@ img {
   border: 2px solid #212121;
   transition-property: border-color;
 }
+.modal-checkbox__check:checked + .modal-checkbox span {
+  background-color: var(--accent-hover-color);
+  border: none;
+}
+.modal-checkbox__check:hover + .modal-checkbox span, .modal-checkbox__check:focus + .modal-checkbox span {
+  /* color: var(--accent-hover-color); */
+  border-color: var(--accent-hover-color);
+}
 
 .modal-checkbox__icon {
   /* fill: transparent; */
   opacity: 0;
 }
-
 .modal-checkbox__icon {
   fill: var(--primary-white-color);
   opacity: 1;
   /* transition-property: border-color; */
-}
-
-.modal-checkbox__chec:checked + .modal-checkbox span {
-  background-color: var(--accent-hover-color);
-  border: none;
-}
-.modal-checkbox__chec:checked + .modal-checkbox span:hover + .modal-checkbox span, .modal-checkbox__chec:checked + .modal-checkbox span:focus + .modal-checkbox span {
-  /* color: var(--accent-hover-color); */
-  border-color: var(--accent-hover-color);
 }
 
 .modal-checkbox__text {
@@ -766,7 +760,6 @@ img {
   border-color: var(--accent-hover-color);
 }
 
-/*--------------------- Футер -----------------------*/
 .footer {
   background-color: var(--background-very-gray);
   margin: 0 auto;
@@ -781,7 +774,6 @@ img {
   transition-property: color;
 }
 
-/* Загальний контейнер футер */
 .container-icon {
   display: flex;
   align-items: baseline;
@@ -796,10 +788,6 @@ img {
   margin-bottom: 20px;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -815,7 +803,6 @@ img {
   color: var(--accent-hover-color);
 }
 
-/* Стилiзує нaвiгацiю */
 .footer-address__nav {
   margin: 0;
   padding-left: 0;
@@ -862,10 +849,9 @@ img {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -897,10 +883,6 @@ img {
   fill: var(--primary-white-color);
 }
 
-/* .footer-flex__item:hover,
-.footer-flex__item:focus {
-    background-color: var(--accent-hover-color);
-} */
 .footer-flex__hover {
   width: 100%;
   height: 100%;
@@ -914,7 +896,6 @@ img {
   background-color: var(--accent-hover-color);
 }
 
-/*----- Футер Розсилка -----*/
 .footer-online__form {
   display: flex;
   justify-content: center;
@@ -945,12 +926,10 @@ img {
   display: flex;
   width: 200px;
   height: 50px;
-  /* margin: auto; */
-  /* left: 700px;
-  top: 712px; */
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
   color: #FFFFFF;
   background: #2196F3;
   justify-content: center;
@@ -983,12 +962,12 @@ img {
   padding: 6px 22px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  font-style: normal;
+  text-align: center;
   cursor: pointer;
   border-radius: 4px;
   border: 0;
@@ -1073,10 +1052,6 @@ img {
   padding: 63px 24px;
   top: 0;
   left: 0;
-  /* width: 322px;
-  height: 168px; */
-  /* font-style: normal;
-      font-weight: 400; */
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;

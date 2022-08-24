@@ -3,12 +3,8 @@
          margin-bottom: 50px;
 
          color: var(--primary-text-color);
-
-         font-weight: 700;
-         font-size: 36px;
-         line-height: 1.17;
+@include font(36px, 1.17, 700, 0.03em);
          text-align: center;
-         letter-spacing: 0.03em;
      }
 
      .section__list2 {
@@ -37,17 +33,12 @@
                 height: 70px;
         
                 color: #FFFFFF;
-        
+        @include font(14px, 1.14, 700, 0.03em);
                 font-style: normal;
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 1.14px;
                 text-align: center;
-                letter-spacing: 0.03em;
                 text-transform: uppercase;
             }
      }
-
      .section__item2 {
          margin: 15px;
      }
